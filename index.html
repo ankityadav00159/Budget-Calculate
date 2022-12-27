@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Budget App</h2>
+
+        <div id="budget">
+            <label for="budget">Budget</label>
+            <input type="number" id="budget_amount">
+            <button id="bud_btn" type="button" onclick="addbud()">Add</button>
+        </div>
+
+        <div id="expense_input" class="expense">
+            <span class="name">Enter Bought Item Name</span>
+            <input type="text" id="item_name">
+            <span class="price">Enter Price Of Item</span>
+            <input id="item_price" type="number">
+            <button id="btn" class="button" type="button" onclick="add()">Add</button>
+        </div>
+
+        <div >
+            <p>Budget : <span id="budget_display">Null</span></p>
+        </div>
+
+        <table id="table_data" class="table">
+            <tr>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </table>
+        
+        <label for="remaining_budget">
+            Reamining Budget : <span id="remaining_budget">Null</span>
+        </label>
+
+        <table id="main_table" class="table">
+            <tr>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Item Bought Date</th>
+            </tr> 
+        </table>
+    </div>
+
+    <script src="budget.js"></script>
+    
+</body>
+</html>
